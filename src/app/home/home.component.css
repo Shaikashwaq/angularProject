@@ -1,0 +1,36 @@
+/* Adding some style to our home page */
+
+.container-fluid{ 
+    margin-left: 10px;
+    background-color: #0000d399;
+
+}
+.container{
+    height: 700px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+} 
+.log-btn,.history-btn{
+    width:120px; 
+    height: 50px; 
+    
+   
+} .logout{
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+} 
+.logout:hover{
+    background-color: lightcoral; 
+    color: white; 
+    border: none;
+}
+.log{
+    margin-right: 10px;
+}

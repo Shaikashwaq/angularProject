@@ -1,0 +1,20 @@
+<!-- This is the navigation bar having the text ang logout button -->
+
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3 fw-bold" style="color: white ;margin-left: 10px; padding: 20px;" >TimeSheet Application</a>
+      <form class="d-flex">
+     
+       <a routerLink="login"><button class="logout" type="submit">Logout</button></a> 
+      </form>
+    </div>
+  </nav>  
+  <!-- The body contains two buttons(components)
+  logtime 
+  showhistory -->
+<div class="container"> 
+  <!-- logtime  -->
+<div class="log"> <a routerLink="logtime"><button type="button" class="btn btn-secondary log-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logtime">LogTime</button></a></div>
+<!-- showhistory -->
+ <div class="history "> <a routerLink="showhistory"><button type="button" class="btn btn-secondary history-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="showhistory">Show History</button></a></div>  
+</div>

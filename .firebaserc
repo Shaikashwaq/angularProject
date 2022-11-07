@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-task-2349f": {
+      "hosting": {
+        "FinalTask": [
+          "angular-task-2349f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-task-2349f"
+  }
+}

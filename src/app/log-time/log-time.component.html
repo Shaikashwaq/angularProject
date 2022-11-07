@@ -1,0 +1,74 @@
+
+<div class="main"> 
+  <!-- This is a container -->
+<div class="container container1"> 
+  <!-- Created a form and the values are sent to the firebase firestore -->
+<form [formGroup]="logtime" (ngSubmit)="submit()"> 
+  <!-- Project Name field -->
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Project Name</label>
+      <input type="text" formControlName="pname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    </div> 
+    <!-- Date field -->
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Date</label>
+      <input type="date"   formControlName="date" class="form-control" id="exampleInputPassword1">
+    </div> 
+    <!-- Time You Work field -->
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Time You Work (hrs)</label>
+        <input type="number" formControlName="timework" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+      
+    </div>  
+    <!-- Select a Role: field  -->
+    <span style="margin-right: 15px; padding-left: 5px; padding-top: 20px;">Select a Role:</span>
+    <select (change)="selectChangeHandler($event)">
+        <option value="Development" >Development</option>
+        <option value="Business Analyst">Business Analyst</option>
+        <option value="Testing">Testing</option>
+        <option value="Deployement">Deployment</option>
+        
+    </select> 
+    <!-- Description field -->
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="desc"></textarea>
+      </div>  
+
+      <!-- submit button -->
+     <button type="submit" class="btn btn-primary" style="margin: 10px" [disabled]="!logtime.valid">submit</button>
+
+  </form> 
+
+  
+
+</div>  
+
+</div> 
+<div class="container main" style="margin-top: 30px">
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th scope="col " class="thcol" >Sno</th>
+      <th scope="col" class="thcol">Project</th>
+      <th scope="col" class="thcol">Date</th>
+      <th scope="col" class="thcol">Time(hrs)</th> <th scope="col"  class="thcol">Role</th> <th scope="col"  class="thcol">Description</th> 
+      <th scope="col" class="thcol">Button</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="datalist" >
+    <tr *ngFor="let i of datalist; let j=index">
+      <th scope="row">{{j}}</th>
+      <td >{{i.pname}}</td>
+      <td>{{i.date}}</td>
+      <td>{{i.timework}}</td><td>{{i.role}}</td><td>{{i.desc}}</td> 
+      <td > 
+        <button type="button" class="bt" (click)="delete(i)">delete</button>
+      </td>
+    </tr>
+   
+   
+  </tbody>
+</table> 
+</div>  
+

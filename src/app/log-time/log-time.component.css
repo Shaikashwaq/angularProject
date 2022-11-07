@@ -1,0 +1,31 @@
+.main{
+    background-color: #83dcdc29;
+}
+.container1{
+    margin-top: 20px;
+    width: 500px; 
+    background-color: darkslateblue;
+    color: white; 
+
+} 
+.mb-3{
+    padding-top: 20px; 
+    padding-left: 8px;
+}  
+.bt{
+    background-color: red; 
+    border-radius: 5px;
+    border: none; 
+    color: white;
+}
+.submit{
+    border: none; 
+    border-radius: 10px; 
+    padding: 7px; 
+    background: lightgray; 
+    color: black;
+}  
+.thcol{
+    background-color: #0d0dc19e; 
+    color: white;
+}

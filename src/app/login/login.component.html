@@ -1,0 +1,26 @@
+ <!-- this is a container -->
+<div class="container  ">
+    <div class="row" style="height:700px">
+        <div class="col-md-6 con">
+            <div class="card">
+                <h3>TimeSheet Application</h3>  
+                <!-- our form -->
+                <form [formGroup]="login" (ngSubmit)="submit()"> 
+                  <!-- Email field -->
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div> 
+                    <!-- password field -->
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password"   formControlName="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                   <!-- this button is unlocked if the user enters thea above fields -->
+                    <button type="submit" class="btn btn-primary" style="margin: 10px" [disabled]="!login.valid">Login</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

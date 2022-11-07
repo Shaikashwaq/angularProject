@@ -1,0 +1,8 @@
+.thcol{
+    background-color: #0d0dc19e; 
+    color: white;
+} 
+.f{
+    display: flex; 
+    justify-content: space-between;
+}

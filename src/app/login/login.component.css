@@ -1,0 +1,26 @@
+/* some styling to our login page 
+adding a background image  */
+.container{ 
+    margin-top: 20px;
+    background-image: url('src/assets/timesheet.jpg'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    background-size: cover;
+    height: 700px;
+}  
+/* Making the alignment as flex */
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+h3{
+    background-color: #494d64; 
+    color: white; 
+    padding: 10px; 
+    font-size: large;
+}
+.mb-3{
+    padding-left: 10px; 
+    padding-top: 10px;
+}
